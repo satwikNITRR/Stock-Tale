@@ -1072,3 +1072,36 @@ footer .wrapper { text-align: center; }
   .footer-link { margin-bottom: 0.3rem; }
 
 }
+.featured-image{
+  display: flex;
+  justify-content: right;
+  align-content: center;
+  min-height: 80vh;
+  width: 50%;
+}
+.image{
+  margin: auto 0;
+  width: 380px;
+  height: 380px;
+  border-radius: 55% 45% 55% 45%;
+  overflow: hidden;
+  animation: imgFloat 7s ease-in-out infinite;
+}
+.image img{
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+}
+.featured-image{
+  order: 1;
+  justify-content: center;
+  min-height: 150px;
+  width: 100%;
+  margin-top: 65px;
+}
+@keyframes imgFloat {
+  50%{
+      transform: translateY(10px);
+      border-radius: 45% 55% 45% 55%;
+  }
+}
